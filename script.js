@@ -16,8 +16,6 @@ pText.forEach((element) => {
         span.append(checkbox);
         element.append(span);
         checkbox.checked = true;
-        alert("Bu element bosilgan!");
-        
     }
 });
 
