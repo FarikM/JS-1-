@@ -8,6 +8,10 @@ let pText = document.querySelectorAll('p');
 })*/
 
 pText.forEach((element) => {
+    element.onclick = function () {
+        alert(element.innerHTML);
+    }
+
     
     element.ondblclick = function () {
         let span = document.createElement('span');
