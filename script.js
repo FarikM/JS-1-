@@ -1,25 +1,19 @@
 let pText = document.querySelectorAll('p');
 
-
-/*pText.forEach((item) => {
-    item.onclick = function () {
-        alert(item.innerHTML);
-    }
-})*/
-
 pText.forEach((element) => {
     element.onclick = function () {
-        alert(element.innerHTML);
+        const span = document.createElement('span');
+        const submitBTN = document.createElement('input');
+        span.append(submitBTN);
+        submitBTN.type = 'checkbox'
+        element.append(span);
+        if (!(submitBTN.checked = true)) {
+            submitBTN.checked = true;
+        }
     }
 
-    
     element.ondblclick = function () {
-        let span = document.createElement('span');
-        const checkbox = document.createElement('input');
-        checkbox.type = 'checkbox';
-        span.append(checkbox);
-        element.append(span);
-        checkbox.checked = true;
+       alert(`${element.innerText} uje bosilgan!`);
     }
 });
 
